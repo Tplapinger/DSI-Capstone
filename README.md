@@ -8,17 +8,17 @@ The final data features that would be used for the model would be the Incident N
 
 
 #### Preparing the Data
-To prepare the data for Natural Language processing, certain steps had to occur to assure smooth processing and least amount of unnecessary words. This was done by using a function that removed non-letters, made every letter lower case, and removed the standard English dictionary words as well as my custom list of stopwords which included the location of the shooting, the shooters name, month, and the name of the incident. In addition, in using, Tokenizer, Lemmatizer, and Stemming I was able to cut down on the repeating of words that are basically the same as run, runs, running, and ran.
+To prepare the data for Natural Language processing, certain steps had to occur to assure smooth processing and least amount of unnecessary words. This was done by using a function that removed non-letters, made every letter lower case, and removed the standard English dictionary words as well as my custom list of stop words which included the location of the shooting, the shooters name, month, and the name of the incident. In addition, in using, Tokenizer, Lemmatizer, and Stemming I was able to cut down on the repeating of words that are basically the same as run, runs, running, and ran.
 
 The other major challenge here with the data was to manage the unbalanced classes before doing a train-test split or countvectorizing. The numbers of occurrences were massively imbalanced because as expected their ethnicities were not evenly spread. The spread, in percent, is as follows:
 
-    White = 68.66%
-    Asian = 14.43%
-    African American = 14.43%
-    Latin American = 2.09%
-    Native American or Alaska Native = 1.33%
+    White = 70.33%
+    Asian = 14.79%
+    African American = 11.38%
+    Latin American = 2.14%
+    Native American or Alaska Native = 1.36%
 
-These numbers are actually quite interesting when you compare them to the demographic make up of the entire US populationm, which is as follows:
+These numbers are actually quite interesting when you compare them to the demographic make up of the entire US population, which is as follows:
 
     White = 72.4%
     Asian = 4.8%
